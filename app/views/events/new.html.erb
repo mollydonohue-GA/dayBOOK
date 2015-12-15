@@ -1,0 +1,10 @@
+<h5>Create New Event</h5>
+<%= form_for(@event) do |form| %>
+  <p><%= form.label("Date") %></p>
+  <p><%= form.text_field("date") %></p>
+  <p><%= form.label("Time") %></p>
+  <p><%= form.text_field("time") %></p>
+  <p><%= form.label("Event") %></p>
+  <p><%= form.text_field("title") %></p>
+  <p><%= form.submit %></p>
+<% end %>

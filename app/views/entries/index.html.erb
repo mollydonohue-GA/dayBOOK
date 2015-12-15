@@ -1,0 +1,7 @@
+<a class="waves-effect waves-light btn"<%= link_to("New Note", new_entry_path) %>
+<div class="collection">
+	<% for entry in @entries %>
+	   <a href="#!" ><%= link_to(entry.date, entry_path(entry), :class => "collection-item") %></a>
+	<% end %>
+</div>    
+ 
