@@ -1,0 +1,12 @@
+ <% for list in @lists %>
+   <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn' href='#' data-activates='dropdown1'><%= list.title %></a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><%= list.item %></li>
+    <li class="divider"></li>
+    <li><%= link_to("Edit list", edit_list_path(list)) %></li>
+  </ul>
+
+   <% end %>

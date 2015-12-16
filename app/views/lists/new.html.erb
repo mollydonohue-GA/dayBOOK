@@ -1,0 +1,5 @@
+<h5>New List</h5>
+<%= form_for(@list) do |form| %>
+  <p><%= form.text_field("title") %></p>
+  <a class="waves-effect waves-light btn"><%= form.submit %></a>
+<% end %>
